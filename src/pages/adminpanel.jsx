@@ -61,7 +61,7 @@ const adminpanel = () => {
                            lg:px-4
                            "
                            >
-                           Join-on
+                           Score
                         </th>
 
                         <th
@@ -107,7 +107,7 @@ const adminpanel = () => {
                            lg:py-7
                            px-3
                            lg:px-4
-                           
+
                            "
                            >
                           Update
@@ -142,7 +142,7 @@ const adminpanel = () => {
                            border-b border-[#E8E8E8]
                            "
                            >
-                           ali 
+                           Waji
                           </td>
                         <td
                            class="
@@ -155,7 +155,7 @@ const adminpanel = () => {
                            border-b border-[#E8E8E8]
                            "
                            >
-                           1 rear 
+                           1 
                           </td>
                           
                         <td
@@ -178,7 +178,7 @@ const adminpanel = () => {
                               inline-block
                               rounded
                               hover:bg-primary hover:text-white
-                              blue-btn
+                              bg-red-600 text-white
                               text-white
                               "
                               >
@@ -206,7 +206,7 @@ const adminpanel = () => {
                               inline-block
                               rounded
                               hover:bg-primary hover:text-white
-                              blue-btn
+                              bg-blue-700 text-white
                               "
                               >
                            ADD
@@ -233,7 +233,7 @@ const adminpanel = () => {
                               inline-block
                               rounded
                               hover:bg-primary hover:text-white
-                              blue-btn
+                              bg-blue-900 text-white
                               "
                               >
                            UPDATE
@@ -280,7 +280,7 @@ const adminpanel = () => {
                            border-b border-[#E8E8E8]
                            "
                            >
-                           2 Year
+                           2 
                         </td>
                         
                        
@@ -306,7 +306,7 @@ const adminpanel = () => {
                               inline-block
                               rounded
                               hover:bg-primary hover:text-white
-                              blue-btn
+                              bg-red-600 text-white
                               "
                               >
                            REMOVE
@@ -334,7 +334,7 @@ const adminpanel = () => {
                               inline-block
                               rounded
                               hover:bg-primary hover:text-white
-                              blue-btn
+                              bg-blue-700 text-white
                               "
                               >
                            ADD
@@ -363,7 +363,7 @@ const adminpanel = () => {
                               rounded
                               
                               hover:bg-primary hover:text-white
-                              blue-btn
+                              bg-blue-900 text-white
                               "
                               >
                            UPDATE
@@ -413,7 +413,7 @@ const adminpanel = () => {
                            border-b border-[#E8E8E8]
                            "
                            >
-                           1 year
+                           3
                         </td>
                        
                        
@@ -440,7 +440,7 @@ const adminpanel = () => {
                               inline-block
                               rounded
                               hover:bg-primary hover:text-white
-                              blue-btn
+                              bg-red-600 text-white
                               "
                               >
                            REMOVE
@@ -467,7 +467,7 @@ const adminpanel = () => {
                               inline-block
                               rounded
                               hover:bg-primary hover:text-white
-                              blue-btn
+                              bg-blue-700 text-white
                               "
                               >
                            ADD
@@ -494,7 +494,7 @@ const adminpanel = () => {
                               inline-block
                               rounded
                               hover:bg-primary hover:text-white
-                              blue-btn
+                              bg-blue-900 text-white
                               "
                               >
                            UPDATE

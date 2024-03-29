@@ -1,94 +1,75 @@
-/* Quiz.css */
+*{
+  margin: 0;
+  padding: 0;
 
+}
+.container{
+  background-color: rgb(247, 247, 241);
+}
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  .logo {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-  
-  .btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .prev {
-    background-color: #ff6347; /* Coral */
-    color: #fff;
-  }
-  
-  .next {
-    background-color: #1e90ff; /* Dodger Blue */
-    color: #fff;
-  }
-  
-  .btn:hover {
-    background-color: darken(#1e90ff, 10%); /* Darken Dodger Blue */
-  }
-  
-  /* Question.css */
+  width: 640px;
+  margin: auto;
+  padding: 20px;
+  color: black;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 40px 50px;
+ 
+}
+.container hr{
+  height: 2px;
+  border: none;
+  background-color: black;
 
-.question {
-    margin-bottom: 20px;
-  }
-  
-  .text {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  input[type="radio"] {
-    display: none;
-  }
-  
-  .check {
-    width: 20px;
-    height: 20px;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .check:before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: background-color 0.3s ease;
-  }
-  
-  input[type="radio"]:checked + .check:before {
-    background-color: #007bff; /* Change to your desired color */
-  }
-  
+}
+.container h1{
+  font-size: 5rem ;
+  font-weight: 800;
+ 
+}
+.container h2{
+  font-size: 27px;
+  font-weight: 500;
+
+}
+.container ul li{
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+
+
+.btn {
+ 
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.index {
+  margin-top: 20px;
+  font-style: italic;
+}
+.correct{
+  background: rgb(53, 182, 30);
+  border-color: rgb(0, 174, 29);
+} 
+.wrong{
+  background-color: rgb(175, 82, 82);
+  border-color: red;
+}

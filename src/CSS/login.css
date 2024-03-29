@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 .formbody {
@@ -20,6 +21,7 @@
 }
 
 .form-container {
+   
     width: 320px;
     border-radius: 0.75rem;
     background-color: rgba(17, 24, 39, 1);
