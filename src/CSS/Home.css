@@ -1,6 +1,7 @@
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 0px;
 }
+
 
 *,
 *::before,
@@ -40,4 +41,26 @@ body {
         margin: auto;
         font-size: 0.7rem;
     }
+}
+
+.topsign {
+    color: aliceblue;
+    background: #034587;
+    transition: 500ms ease;
+}
+
+.topsign:hover {
+    color: rgba(240, 248, 255, 0.779);
+    background: #02305e;
+}
+
+.getstart {
+    background: #033c75;
+    color: aliceblue;
+    transition: 500ms ease;
+}
+
+.getstart:hover {
+    background: #02305e;
+    color: rgba(240, 248, 255, 0.779);
 }

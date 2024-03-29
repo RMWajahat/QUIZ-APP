@@ -10,7 +10,7 @@ const Login = () => {
     const [password, setPassword] = useState("");
     return (
         <>
-            <div className="formbody">
+            <div className="formbody container">
                 <div className="form-container">
                     <p className="title">Login</p>
                     <form className="form">

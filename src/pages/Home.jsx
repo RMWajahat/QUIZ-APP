@@ -1,7 +1,6 @@
 import React from 'react'
 import heroimg from "../photos_questions/hero-image.webp"
-import { Link } from 'react-router-dom'
-import { BiLogIn } from "react-icons/bi";
+import { Link } from 'react-router-dom';
 import '../CSS/Home.css'
 const Home = () => {
   return (
@@ -14,34 +13,7 @@ const Home = () => {
           href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/motion-tailwind.css"
         />
         <>
-          <div className="container flex flex-col mx-auto bg-white w-screen">
-            <div className="relative flex flex-wrap items-center justify-between w-full bg-white group py-7 shrink-0">
-              <div className='navyclr'>
-                Navy <span >Ship</span>
-              </div>
-              <div className="items-center justify-between gap-12 text-black flex">
-                <Link
-                  className="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
-                  to="/"
-                >
-                  Home
-                </Link>
-                <Link
-                  className="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
-                  to="/login"
-                >
-                  Quiz
-                </Link>
-              </div>
-              <div className="items-center gap-8 flex">
-                <Link to="/login" className="flex items-center text-sm font-normal text-gray-800 hover:text-gray-900 transition duration-300">
-                  Log In <BiLogIn className='text-lg' />
-                </Link>
-                <Link to="/signup" className="flex items-center px-4 py-2 text-sm font-bold rounded-xl bg-purple-blue-100 text-purple-blue-600 hover:bg-purple-blue-600 hover:text-white transition duration-300">
-                  SignUp
-                </Link>
-              </div>
-            </div>
+          <div className="container flex flex-col mx-auto bg-white w-screen pt-5">
             <div className="grid w-full grid-cols-1 my-auto mt-7 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
               <div className="flex flex-col justify-center col-span-1 text-center lg:text-start">
                 <div className="flex items-center justify-center mb-4 lg:justify-normal">
@@ -61,7 +33,7 @@ const Home = () => {
                   Welcome aboard to <b>'Nautical Navigators'</b>, where the sea meets the mind in an adventurous journey of knowledge! Set sail on a quest to test your wits and wisdom about all things maritime. From the legendary voyages of historical explorers to the intricate workings of modern naval technology,our quiz app plunges you into the depths of naval history, culture, and innovation.Whether you're a seasoned seafarer or a landlubber curious to explore the vast blue horizon,prepare to embark on a thrilling voyage of discovery. Hoist the sails, weigh anchor,and let the quizzing adventure begin!
                 </p>
                 <div className="flex flex-col items-center gap-4 lg:flex-row mb-6 md:mb-0">
-                  <Link to="/login" className="min-w-48 py-4 text-sm font-bold text-white px-7 bg-purple-blue-500 hover:bg-purple-blue-800 focus:ring-4 focus:ring-purple-blue-100 transition duration-300 rounded-xl decoration-white">
+                  <Link to="/login" className="getstart min-w-48 py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-100 transition duration-300 rounded-xl decoration-white">
                     Get started now
                   </Link>
                 </div>
