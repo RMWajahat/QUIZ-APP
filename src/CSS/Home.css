@@ -1,78 +1,43 @@
-
-body{
-    background-color: rgb(54, 53, 53);
-}
-link {
-    text-decoration: none;
-    color: white;
-    
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-.nav{
-     align-items: center;
-     justify-content: space-around;
-     display: flex;
-     gap: 2px;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.nav h3{
-    color: white;
-    text-decoration: none;
-    text-transform: none;
+
+body {
+    background: white;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
-#left{
-    width: 50%;
-    height: 80%;
-    align-items: center;
-    justify-content: center;
-    padding-left: 32px;
-    text-align: center;
+
+.navyclr {
+    color: #001f3f;
+    font-weight: bolder;
+    font-size: 1.3rem;
 }
-#left h1{
-    padding-top: 100px;
-    padding-right: 85px;
-    font-size: 49px;
-    padding-left: 83px;
-}
-#left h1 span{
-    color: aqua;
+
+.navyclr span {
+    color: #034587;
+    font-weight: bold;
 }
 
 
-#right{
-    width: 50%;
-    height: 80%;
-    text-align: center;
-   
-}
-#left p{
-    font-size: 15px;
-    text-align: justify;
-    text-justify: inter-word;
-    padding-left: 122px;
-    font-family: "Tac One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    
-}
-#left p{
-        font-family: "Kaushan Script", cursive;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 22px;
-      
-}
-#right img {
-    border-radius: 8px;
-    width: 40vw;
-    padding-top: 90px;
-    border-radius: 50%;
+.texttoleft {
+    text-align: left;
 }
 
-#left span{
-    color: rgb(0, 247, 255);
-}
-.con{
-    height: 100%;
-    width: 100%;
-    display: flex;
+@media (max-width: 768px) {
+    .texttoleft {
+        text-align: justify;
+        width: 80vw;
+        margin: auto;
+        font-size: 0.7rem;
+    }
 }
