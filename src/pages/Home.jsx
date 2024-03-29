@@ -1,6 +1,5 @@
 import React from 'react'
-import heroimg from "../photos and questions/hero-image.webp"
-import logo from "../photos and questions/quizapplogo.png"
+import heroimg from "../photos_questions/hero-image.webp"
 import { Link } from 'react-router-dom'
 import { BiLogIn } from "react-icons/bi";
 import '../CSS/Home.css'

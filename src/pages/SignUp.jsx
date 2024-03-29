@@ -1,67 +1,54 @@
 import React, { useState } from 'react';
-import '../CSS/SignUp.css';
+import "../CSS/Login.css";
 import { Link } from 'react-router-dom';
 const SignUp = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-
-  const handleSubmit = (e) => {
+  const handleSignup = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', { email, password, confirmPassword });
-  };
-
+    console.log("Sign in button clicked");
+  }
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmpassword, setConfirmPassword] = useState("");
   return (
-    <div id="logo">
-  <div className="nav">
-            <h1>Navy<span>ship</span></h1>
-            <Link to={'/'}><h3>Home</h3> </Link>
-            <Link to="/login"> <h3>login</h3> </Link>
+    <>
+      <div className="formbody">
+        <div className="form-container">
+          <p className="title">Signup</p>
+          <form className="form">
+            <div className="input-group">
+              <label htmlFor="username">Email</label>
+              <input type="email" name="username" id="username" placeholder="" value={username} onChange={(e) => {
+                setUsername(e.target.value);
+              }} />
             </div>
-    <div className="signup">
-      <form className="signup__form" onSubmit={handleSubmit}>
-        <h2>Sign <span>Up</span></h2>
-        <div className="signup__input">
-          <div className="signup-box">
-            <p>Email</p>
-            <input 
-              type="email" 
-              value={email} 
-              onChange={(e) => setEmail(e.target.value)} 
-              placeholder="Enter Email" 
-              required 
-              className="signup--input" 
-            />
-          </div>
-          <div className="signup-box">
-            <p>Password</p>
-            <input 
-              type="password" 
-              value={password} 
-              onChange={(e) => setPassword(e.target.value)} 
-              placeholder="Enter Password" 
-              required 
-              className="signup--input" 
-            />
-          </div>
-          <div className="signup-box">
-            <p>Confirm Password</p>
-            <input 
-              type="password" 
-              value={confirmPassword} 
-              onChange={(e) => setConfirmPassword(e.target.value)} 
-              placeholder="Confirm Password" 
-              required 
-              className="signup--input" 
-            />
-          </div>
-        </div>
-        <button type="submit">Sign Up</button>
-        <p>Already have an account? <Link to= '/login'>Log In</Link> </p>
-      </form>
-    </div>
-    </div>
-  );
-};
+            <div className="input-group">
+              <label htmlFor="password">Password</label>
+              <input type="password" name="password" id="password" placeholder="" value={password} onChange={(e) => {
+                setPassword(e.target.value);
+              }} />
 
-export default SignUp;
+            </div>
+            <div className="input-group">
+              <label htmlFor="password">Confirm Password</label>
+              <input type="password" name="password" id="password" placeholder="" value={confirmpassword} onChange={(e) => {
+                setConfirmPassword(e.target.value);
+              }} />
+
+            </div>
+            <button className="sign" onClick={handleSignup}>Sign Up</button>
+          </form>
+
+          <p className="signup">
+            Already have an account?
+            <Link rel="noopener noreferrer" to="/login" className="">
+              Sign in
+            </Link>
+          </p>
+        </div>
+      </div>
+
+    </>
+  )
+}
+
+export default SignUp
