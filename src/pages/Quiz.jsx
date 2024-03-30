@@ -7,8 +7,8 @@ const Quiz = () => {
   const [question, setQuestion] = useState(data[indexedDB]);
   const [lock, setLock] = useState(false);
   const [score, setScore] = useState(0);
-  const [result,setResult] = useState(false)
-  const [selcted ,setSelcted] = useState(false) 
+  const [result, setResult] = useState(false)
+  const [selcted, setSelcted] = useState(false)
 
   const option1 = useRef(null);
   const option2 = useRef(null);
@@ -42,7 +42,7 @@ const Quiz = () => {
       //   setLock(true);
       //   optionArray[question.ans - 1].current.classList.add('correct');
       // }
-    e.terget.classList.add("selcted")
+      e.terget.classList.add("selcted")
     }
   };
   const next = () => {
@@ -60,51 +60,52 @@ const Quiz = () => {
       });
     }
   };
-  const reset= ()=>{
+  const reset = () => {
     setIndexedDB(0)
     setQuestion(data[0])
     setScore(0)
     setLock(false)
     setResult(false)
   }
-  
+
 
   return (
     <div>
       <div className='container'>
         <h1>Quiz</h1>
         <hr />
-        {result? <></>:<><div className='fotn'>
-          <h2>
-            {indexedDB + 1}.{question.question}
-          </h2>
-          <br />
-          <br />
-          <ul>
-            <li ref={option1} onClick={e => checkAns(e, 1)}>
-              {question.option1}
-            </li>
-            <li ref={option2} onClick={e => checkAns(e, 2)}>
-              {question.option2}
-            </li>
-            <li ref={option3} onClick={e => checkAns(e, 3)}>
-              {question.option3}
-            </li>
-            <li ref={option4} onClick={e => checkAns(e, 4)}>
-              {question.option4}
-            </li>
-          </ul>
-        </div>
-        <div onClick={next} className='btn'>
-          Next
-        </div>
-        <div className='index'>
-          {indexedDB + 1} of {data.length} question
-        </div></>}
-        {result?<><h2>you scored {score}out of {data.length}</h2>
-        <div onClick={reset} className="btn">reset</div></>:<></>}
-        
-        
+        {result ? <></> : <>
+          <div className='fotn'>
+            <h2 className='text-left -translate-x-72 w-screen'>
+              <span className='font-bold text-blue-800'>{indexedDB + 1}</span>. {question.question}
+            </h2>
+            <br />
+            <br />
+            <ul>
+              <li ref={option1} onClick={e => checkAns(e, 1)} className='hover:bg-blue-300 active:bg-blue-400 select-none rounded-md'>
+                {question.option1}
+              </li>
+              <li ref={option2} onClick={e => checkAns(e, 2)} className='hover:bg-blue-300 active:bg-blue-400 select-none rounded-md'>
+                {question.option2}
+              </li>
+              <li ref={option3} onClick={e => checkAns(e, 3)} className='hover:bg-blue-300 active:bg-blue-400 select-none rounded-md'>
+                {question.option3}
+              </li>
+              <li ref={option4} onClick={e => checkAns(e, 4)} className='hover:bg-blue-300 active:bg-blue-400 select-none rounded-md'>
+                {question.option4}
+              </li>
+            </ul>
+          </div>
+          <div onClick={next} className='btn'>
+            Next
+          </div>
+          <div className='index'>
+            {indexedDB + 1} of {data.length} question
+          </div></>}
+        {result ? <><h2>you scored {score}out of {data.length}</h2>
+          <div onClick={reset} className="btn">reset</div></> : <></>}
+
+
       </div>
     </div>
   );
