@@ -1,23 +1,23 @@
 import React from 'react'
 
 const adminpanel = () => {
-  return (
-    <div>
-    <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+   return (
+      <div>
+         <script src="https://cdn.tailwindcss.com"></script>
+         <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
+         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 
-<section class="bg-white py-20 lg:py-[120px]">
-   <div class="container">
-      <div class="flex flex-wrap -mx-4">
-         <div class="w-full px-4">
-            <div class="max-w-full overflow-x-auto">
-               <table class="table-auto w-full">
-                  <thead>
-                     <tr class="bg-primary text-center">
-                     <th
-                           class="
+         <section className="bg-white py-20 lg:py-[120px]">
+            <div className="container">
+               <div className="flex flex-wrap -mx-4">
+                  <div className="w-full px-4">
+                     <div className="max-w-full overflow-x-auto">
+                        <table className="table-auto w-full">
+                           <thead>
+                              <tr className="bg-blue-500 text-center">
+                                 <th
+                                    className="
                            w-1/6
                            min-w-[160px]
                            text-lg
@@ -29,11 +29,11 @@ const adminpanel = () => {
                            lg:px-4
                            border-l border-transparent
                            "
-                           >
-                           ID
-                        </th>
-                        <th
-                           class="
+                                 >
+                                    ID
+                                 </th>
+                                 <th
+                                    className="
                            w-1/6
                            min-w-[160px]
                            text-lg
@@ -45,27 +45,28 @@ const adminpanel = () => {
                            lg:px-4
                            border-l border-transparent
                            "
-                           >
-                           Users
-                        </th>
-                        <th
-                           class="
+                                 >
+                                    Users
+                                 </th>
+                                 <th
+                                    className="
                            w-1/6
                            min-w-[160px]
                            text-lg
                            font-semibold
                            text-white
+                           bg
                            py-4
                            lg:py-7
                            px-3
                            lg:px-4
                            "
-                           >
-                           Join-on
-                        </th>
+                                 >
+                                    Score
+                                 </th>
 
-                        <th
-                           class="
+                                 <th
+                                    className="
                            w-1/6
                            min-w-[160px]
                            text-lg
@@ -76,12 +77,12 @@ const adminpanel = () => {
                            px-3
                            lg:px-4
                            "
-                           >
-                          Remove
-                           
-                        </th>
-                        <th
-                           class="
+                                 >
+                                    Remove
+
+                                 </th>
+                                 <th
+                                    className="
                            w-1/6
                            min-w-[160px]
                            text-lg
@@ -92,12 +93,12 @@ const adminpanel = () => {
                            px-3
                            lg:px-4
                            "
-                           >
-                          Add_User
-                        </th>
-                       
-                        <th
-                           class="
+                                 >
+                                    Add_User
+                                 </th>
+
+                                 <th
+                                    className="
                            w-1/6
                            min-w-[160px]
                            text-lg
@@ -107,19 +108,19 @@ const adminpanel = () => {
                            lg:py-7
                            px-3
                            lg:px-4
-                           
+
                            "
-                           >
-                          Update
-                           
-                        </th>
-                       
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td
-                           class="
+                                 >
+                                    Update
+
+                                 </th>
+
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            text-base
@@ -128,11 +129,11 @@ const adminpanel = () => {
                            bg-blue-400
                            border-b border-l border-[#E8E8E8]
                            "
-                           >
-                           .com
-                        </td>
-                        <td
-                           class="
+                                 >
+                                    1
+                                 </td>
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            text-base
@@ -141,11 +142,11 @@ const adminpanel = () => {
                            bg-white
                            border-b border-[#E8E8E8]
                            "
-                           >
-                           ali 
-                          </td>
-                        <td
-                           class="
+                                 >
+                                    Waji
+                                 </td>
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            text-base
@@ -154,12 +155,12 @@ const adminpanel = () => {
                            bg-white
                            border-b border-[#E8E8E8]
                            "
-                           >
-                           1 rear 
-                          </td>
-                          
-                        <td
-                           class="
+                                 >
+                                    80
+                                 </td>
+
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            text-base
@@ -168,25 +169,23 @@ const adminpanel = () => {
                            bg-white
                            border-b border-r border-[#E8E8E8]
                            "
-                           >
-                           <a
-                              href="javascript:void(0)"
-                              class="
+                                 >
+                                    <button
+                                       className="
                               border border-primary
                               py-2
                               px-6
                               inline-block
                               rounded
-                              hover:bg-primary hover:text-white
-                              blue-btn
-                              text-white
+                              hover:bg-red-700 hover:text-white
+                              bg-red-600 text-white
                               "
-                              >
-                           REMOVE
-                           </a>
-                        </td>
-                        <td
-                           class="
+                                    >
+                                       REMOVE
+                                    </button>
+                                 </td>
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            text-base
@@ -195,25 +194,24 @@ const adminpanel = () => {
                            bg-white
                            border-b border-r border-[#E8E8E8]
                            "
-                           >
-                           <a
-                              href="javascript:void(0)"
-                              class="
+                                 >
+                                    <button
+                                       className="
                               border border-primary
                               py-2
                               px-6
                               text-white
                               inline-block
                               rounded
-                              hover:bg-primary hover:text-white
-                              blue-btn
+                              hover:bg-blue-800 hover:text-white
+                              bg-blue-700
                               "
-                              >
-                           ADD
-                           </a>
-                        </td>
-                        <td
-                           class="
+                                    >
+                                       ADD
+                                    </button>
+                                 </td>
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            text-base
@@ -222,10 +220,9 @@ const adminpanel = () => {
                            bg-white
                            border-b border-r border-[#E8E8E8]
                            "
-                           >
-                           <a
-                              href="javascript:void(0)"
-                              class="
+                                 >
+                                    <button
+                                       className="
                               border border-primary
                               py-2
                               px-6
@@ -233,17 +230,17 @@ const adminpanel = () => {
                               inline-block
                               rounded
                               hover:bg-primary hover:text-white
-                              blue-btn
+                              bg-blue-900 
                               "
-                              >
-                           UPDATE
-                           </a>
-                        </td>
-                        
-                     </tr>
-                     <tr>
-                        <td
-                           class="
+                                    >
+                                       UPDATE
+                                    </button>
+                                 </td>
+
+                              </tr>
+                              <tr>
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            
@@ -253,11 +250,11 @@ const adminpanel = () => {
                            bg-blue-400
                            border-b border-l border-[#E8E8E8]
                            "
-                           >
-                           .com
-                        </td>
-                        <td
-                           class="
+                                 >
+                                    2
+                                 </td>
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            text-base
@@ -266,11 +263,11 @@ const adminpanel = () => {
                            bg-white
                            border-b border-[#E8E8E8]
                            "
-                           >
-                           yasir
-                        </td>
-                        <td
-                           class="
+                                 >
+                                    yasir
+                                 </td>
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            text-base
@@ -279,13 +276,13 @@ const adminpanel = () => {
                            bg-white
                            border-b border-[#E8E8E8]
                            "
-                           >
-                           2 Year
-                        </td>
-                        
-                       
-                        <td
-                           class="
+                                 >
+                                    80
+                                 </td>
+
+
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            text-base
@@ -295,26 +292,25 @@ const adminpanel = () => {
                            border-b border-r border-[#E8E8E8]
 
                            "
-                           >
-                           <a
-                              href="javascript:void(0)"
-                              class="
+                                 >
+                                    <button
+                                       className="
                               border border-primary
                               py-2
                               px-6
                               text-white
                               inline-block
                               rounded
-                              hover:bg-primary hover:text-white
-                              blue-btn
+                              hover:bg-red-700 hover:text-white
+                              bg-red-600 
                               "
-                              >
-                           REMOVE
-                           </a>
+                                    >
+                                       REMOVE
+                                    </button>
 
-                        </td>
-                        <td
-                           class="
+                                 </td>
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            text-base
@@ -323,26 +319,24 @@ const adminpanel = () => {
                            bg-white
                            border-b border-r border-[#E8E8E8]
                            "
-                           >
-                           <a
-                              href="javascript:void(0)"
-                              class="
+                                 >
+                                    <button
+                                       className="
                               border border-primary
                               py-2
                               px-6
-                              text-white
                               inline-block
                               rounded
-                              hover:bg-primary hover:text-white
-                              blue-btn
+                              hover:bg-blue-800 hover:text-white
+                              bg-blue-700 text-white
                               "
-                              >
-                           ADD
-                           </a>
+                                    >
+                                       ADD
+                                    </button>
 
-                        </td>
-                        <td
-                           class="
+                                 </td>
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            text-base
@@ -351,10 +345,9 @@ const adminpanel = () => {
                            bg-white
                            border-b border-r border-[#E8E8E8]
                            "
-                           >
-                           <a
-                              href="javascript:void(0)"
-                              class="
+                                 >
+                                    <button
+                                       className="
                               border border-primary
                               py-2
                               px-6
@@ -363,19 +356,19 @@ const adminpanel = () => {
                               rounded
                               
                               hover:bg-primary hover:text-white
-                              blue-btn
+                              bg-blue-900 
                               "
-                              >
-                           UPDATE
-                           </a>
+                                    >
+                                       UPDATE
+                                    </button>
 
-                        </td>
-                        
-                        
-                     </tr>
-                     <tr>
-                        <td
-                           class="
+                                 </td>
+
+
+                              </tr>
+                              <tr>
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            text-base
@@ -385,11 +378,11 @@ const adminpanel = () => {
                            border-b border-l border-[#E8E8E8]
 
                            "
-                           >
-                           .com
-                        </td>
-                        <td
-                           class="
+                                 >
+                                    3
+                                 </td>
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            text-base
@@ -399,11 +392,11 @@ const adminpanel = () => {
                            border-b border-[#E8E8E8]
                             
                            "
-                           >
-                           uzair 
-                        </td>
-                        <td
-                           class="
+                                 >
+                                    uzair
+                                 </td>
+                                 <td
+                                    className="
                            text-center text-dark
                            font-medium
                            text-base
@@ -412,105 +405,101 @@ const adminpanel = () => {
                            bg-white
                            border-b border-[#E8E8E8]
                            "
-                           >
-                           1 year
-                        </td>
-                       
-                       
-                      
-                       
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-white
-                           border-b border-r border-[#E8E8E8]
-                           "
-                           >
-                           <a
-                              href="javascript:void(0)"
-                              class="
-                              border border-primary
-                              py-2
-                              px-6
-                              text-white
-                              inline-block
-                              rounded
-                              hover:bg-primary hover:text-white
-                              blue-btn
-                              "
-                              >
-                           REMOVE
-                           </a>
-                        </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-white
-                           border-b border-r border-[#E8E8E8]
-                           "
-                           >
-                           <a
-                              href="javascript:void(0)"
-                              class="
-                              border border-primary
-                              py-2
-                              px-6
-                              text-white
-                              inline-block
-                              rounded
-                              hover:bg-primary hover:text-white
-                              blue-btn
-                              "
-                              >
-                           ADD
-                           </a>
-                        </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-white
-                           border-b border-r border-[#E8E8E8]
-                           "
-                           >
-                           <a
-                              href="javascript:void(0)"
-                              class="
-                              border border-primary
-                              py-2
-                              px-6
-                              text-white
-                              inline-block
-                              rounded
-                              hover:bg-primary hover:text-white
-                              blue-btn
-                              "
-                              >
-                           UPDATE
-                           </a>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
+                                 >
+                                    80
+                                 </td>
 
-    </div>
-  )
+
+
+
+                                 <td
+                                    className="
+                           text-center text-dark
+                           font-medium
+                           text-base
+                           py-5
+                           px-2
+                           bg-white
+                           border-b border-r border-[#E8E8E8]
+                           "
+                                 >
+                                    <button
+                                       className="
+                              border border-primary
+                              py-2
+                              px-6
+                              inline-block
+                              rounded
+                              hover:bg-red-700 hover:text-white
+                              bg-red-600 text-white
+                              "
+                                    >
+                                       REMOVE
+                                    </button>
+                                 </td>
+                                 <td
+                                    className="
+                           text-center text-dark
+                           font-medium
+                           text-base
+                           py-5
+                           px-2
+                           bg-white
+                           border-b border-r border-[#E8E8E8]
+                           "
+                                 >
+                                    <button
+                                       className="
+                              border border-primary
+                              py-2
+                              px-6
+                              text-white
+                              inline-block
+                              rounded
+                              hover:bg-blue-800 hover:text-white
+                              bg-blue-700 
+                              "
+                                    >
+                                       ADD
+                                    </button>
+                                 </td>
+                                 <td
+                                    className="
+                           text-center text-dark
+                           font-medium
+                           text-base
+                           py-5
+                           px-2
+                           bg-white
+                           border-b border-r border-[#E8E8E8]
+                           "
+                                 >
+                                    <button
+                                       className="
+                              border border-primary
+                              py-2
+                              px-6
+                              text-white
+                              inline-block
+                              rounded
+                              hover:bg-primary hover:text-white
+                              bg-blue-900 
+                              "
+                                    >
+                                       UPDATE
+                                    </button>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+      </div>
+   )
 }
 
 export default adminpanel

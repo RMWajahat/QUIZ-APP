@@ -14,7 +14,6 @@ h2{
     margin-top: 5%;
     background-color: rgba(0,0,0,0.5);;
   }
-  
   .signup__form {
     display: flex;
     flex-direction: column;
@@ -42,7 +41,6 @@ h2{
   
   button {
     width: 100%;
-  
     background-color: rgb(30, 255, 248);
     color: #fff;
     border: none;
@@ -71,4 +69,9 @@ h2{
     color: white;
     text-decoration: none;
     text-transform: none;
+}
+body.navbar-background {
+  background-image: url('../photos_questions/hero-image.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
