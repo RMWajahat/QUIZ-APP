@@ -5,19 +5,21 @@ import Home from './pages/Home';
 import Navbar from './pages/Navbar';
 import Quiz from './pages/Quiz';
 import AdminPanel from './pages/adminpanel';
+import ErrorPage from './pages/ErrorPage';
 function App() {
 
   return (
-   <BrowserRouter>  
-    <Navbar/>
-   <Routes>
-    <Route path='/quiz' element={<Quiz/>}></Route>
-    <Route path='/signup' element={<SignUp/>}></Route>
-    <Route path='/login' element={<Login/>}></Route>
-    <Route path='/' element={<Home/>}></Route>
-    <Route path='/adminpanel' element={<AdminPanel/>}></Route>
-   </Routes>
-   </BrowserRouter>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path='/quiz' element={<Quiz />}></Route>
+        <Route path='/signup' element={<SignUp />}></Route>
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/admin' element={<AdminPanel />}></Route>
+        <Route path='*' element={<ErrorPage />}></Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

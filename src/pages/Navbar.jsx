@@ -26,7 +26,7 @@ const Navbar = () => {
                     </Link>
                     <Link
                         className="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900"
-                        to="/login"
+                        to="/quiz"
                     >
                         Quiz
                     </Link>

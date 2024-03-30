@@ -8,6 +8,7 @@ const Quiz = () => {
   const [lock, setLock] = useState(false);
   const [score, setScore] = useState(0);
   const [result,setResult] = useState(false)
+  const [selcted ,setSelcted] = useState(false) 
 
   const option1 = useRef(null);
   const option2 = useRef(null);
@@ -18,15 +19,16 @@ const Quiz = () => {
 
   const checkAns = (e, ans) => {
     if (!lock) {
-      if (question.ans === ans) {
-        e.target.classList.add('correct');
-        setLock(true);
-        setScore(prev => prev + 1);
-      } else {
-        e.target.classList.add('wrong');
-        setLock(true);
-        optionArray[question.ans - 1].current.classList.add('correct');
-      }
+      // if (question.ans === ans) {
+      //   e.target.classList.add('correct');
+      //   setLock(true);
+      //   setScore(prev => prev + 1);
+      // } else {
+      //   e.target.classList.add('wrong');
+      //   setLock(true);
+      //   optionArray[question.ans - 1].current.classList.add('correct');
+      // }
+    e.terget.classList.add("selcted")
     }
   };
 
@@ -45,14 +47,14 @@ const Quiz = () => {
       });
     }
   };
-  const reset= ()=>{
+  const reset = () => {
     setIndexedDB(0)
     setQuestion(data[0])
     setScore(0)
     setLock(false)
     setResult(false)
   }
-  
+
 
   return (
     <div>
@@ -86,7 +88,7 @@ const Quiz = () => {
         <div className='index'>
           {indexedDB + 1} of {data.length} question
         </div></>}
-        {result?<><h2>YOUR SCORE {score}</h2>
+        {result?<><h2>you scored {score}out of {data.length}</h2>
         <div onClick={reset} className="btn">reset</div></>:<></>}
         
         
