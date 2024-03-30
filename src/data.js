@@ -48,28 +48,28 @@ export const data = [
       ans: 3,
     },
     {
-      "question": "How does the maritime cyber range adapt to different player skill levels?",
-      "option1": "By limiting access to certain game features based on player age",
-      "option2": "By adjusting the difficulty levels of scenarios and challenges",
-      "option3": "By providing unlimited resources to all players",
-      "option4": "By randomizing game mechanics for each player",
-      "ans": 2
+      question: "How does the maritime cyber range adapt to different player skill levels?",
+      option1: "By limiting access to certain game features based on player age",
+      option2: "By adjusting the difficulty levels of scenarios and challenges",
+      option3: "By providing unlimited resources to all players",
+      option4: "By randomizing game mechanics for each player",
+      ans: 2
     },
     {
-      "question": "What role does collaboration play in the maritime cyber range video game?",
-      "option1": "None, as the game is designed for solo play only",
-      "option2": "Players can collaborate to defend against cyber threats and solve challenges",
-      "option3": "Collaboration is encouraged but not necessary for gameplay",
-      "option4": "Players compete against each other with no opportunity for collaboration",
-      "ans": 2
+      question: "What role does collaboration play in the maritime cyber range video game?",
+      option1: "None, as the game is designed for solo play only",
+      option2: "Players can collaborate to defend against cyber threats and solve challenges",
+      option3: "Collaboration is encouraged but not necessary for gameplay",
+      option4: "Players compete against each other with no opportunity for collaboration",
+      ans: 2
     },
     {
-      "question": "What consequences can players experience for their actions within the maritime cyber range?",
-      "option1": "None, as actions do not affect gameplay",
-      "option2": "Rewards for successful completion of challenges",
-      "option3": "Realistic consequences such as system failures or data breaches",
-      "option4": "Unlimited resources regardless of performance",
-      "ans": 3
+      question: "What consequences can players experience for their actions within the maritime cyber range?",
+      option1: "None, as actions do not affect gameplay",
+      option2: "Rewards for successful completion of challenges",
+      option3: "Realistic consequences such as system failures or data breaches",
+      option4: "Unlimited resources regardless of performance",
+      ans: 3
     },
     {
       "question": "How does the maritime cyber range contribute to improving cybersecurity preparedness?",

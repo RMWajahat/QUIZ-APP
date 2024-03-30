@@ -15,6 +15,13 @@ const SignUp = () => {
         <div className="form-container">
           <p className="title">Signup</p>
           <form className="form">
+          <div className="input-group">
+              <label htmlFor="password">Username</label>
+              <input type="password" name="password" id="password" placeholder="" value={confirmpassword} onChange={(e) => {
+                setConfirmPassword(e.target.value);
+              }} />
+              </div>
+
             <div className="input-group">
               <label htmlFor="username">Email</label>
               <input type="email" name="username" id="username" placeholder="" value={username} onChange={(e) => {
