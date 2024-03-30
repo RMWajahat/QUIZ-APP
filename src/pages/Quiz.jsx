@@ -89,10 +89,11 @@ const Quiz = () => {
         ) : (
           <>
             <div className="font">
-              <h2>
+             <li> <h2 >
                 {indexedDB + 1}.{question.question}
               </h2>
-              <br />
+              </li>
+              <br/>
               <br />
               <ul>
                 <li ref={option1} onClick={(e) => checkAns(e, 1)}>
