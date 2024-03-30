@@ -8,7 +8,6 @@ const Quiz = () => {
   const [lock, setLock] = useState(false);
   const [score, setScore] = useState(0);
   const [result,setResult] = useState(false)
-  const [selcted ,setSelcted] = useState(false) 
 
   const option1 = useRef(null);
   const option2 = useRef(null);
@@ -17,34 +16,20 @@ const Quiz = () => {
 
   const optionArray = [option1, option2, option3, option4];
 
-  // const checkAns = (e, ans) => {
-  //   if (!lock) {
-  //     if (question.ans === ans) {
-  //       e.target.classList.add('correct');
-  //       setLock(true);
-  //       setScore(prev => prev + 1);
-  //      } 
-  //      //else {
-  //     //   e.target.classList.add('wrong');
-  //     //   setLock(true);
-  //     //   optionArray[question.ans - 1].current.classList.add('correct');
-  //     // }
-  //   }
-  // };
   const checkAns = (e, ans) => {
     if (!lock) {
-      // if (question.ans === ans) {
-      //   e.target.classList.add('correct');
-      //   setLock(true);
-      //   setScore(prev => prev + 1);
-      // } else {
-      //   e.target.classList.add('wrong');
-      //   setLock(true);
-      //   optionArray[question.ans - 1].current.classList.add('correct');
-      // }
-    e.terget.classList.add("selcted")
+      if (question.ans === ans) {
+        e.target.classList.add('correct');
+        setLock(true);
+        setScore(prev => prev + 1);
+      } else {
+        e.target.classList.add('wrong');
+        setLock(true);
+        optionArray[question.ans - 1].current.classList.add('correct');
+      }
     }
   };
+
   const next = () => {
     if (lock) {
       if (indexedDB === data.length - 1) { // Changed 'index' to 'indexedDB'
@@ -101,7 +86,7 @@ const Quiz = () => {
         <div className='index'>
           {indexedDB + 1} of {data.length} question
         </div></>}
-        {result?<><h2>you scored {score}out of {data.length}</h2>
+        {result?<><h2>YOUR SCORE {score}</h2>
         <div onClick={reset} className="btn">reset</div></>:<></>}
         
         

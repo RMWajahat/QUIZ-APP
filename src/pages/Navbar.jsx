@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { BiLogIn } from "react-icons/bi";
+import { SiGnuprivacyguard } from "react-icons/si";
 
 const Navbar = () => {
     return (
@@ -35,7 +36,7 @@ const Navbar = () => {
                         Log In <BiLogIn className='text-lg' />
                     </Link>
                     <Link to="/signup" className="flex items-center px-4 py-2 text-sm font-bold rounded-xl  transition duration-300 topsign">
-                        SignUp
+                        SignUp  <SiGnuprivacyguard />
                     </Link>
                 </div>
             </div ></>
