@@ -1,13 +1,43 @@
-*{
+* {
   margin: 0;
   padding: 0;
+}
 
+
+
+@keyframes backmove {
+
+  0%,
+  100% {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../photos_questions/waves.webp");
+  }
+
+  14.28% {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../photos_questions/hero-image.webp");
+  }
+
+  28.57% {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../photos_questions/images.jpeg");
+  }
+
+  42.85% {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../photos_questions/project.jpg");
+  }
+
+  57.14% {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../photos_questions/radar.jpg");
+  }
+
+  71.42% {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../photos_questions/ship.png");
+  }
+
+  85.71% {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../photos_questions/war.jpg");
+  }
 }
-.container{
-  background-color: rgb(247, 247, 241);
-}
+
 .container {
-  width: 640px;
   margin: auto;
   padding: 40px;
   color: black;
@@ -15,31 +45,52 @@
   gap: 20px;
   border-radius: 10px;
   padding: 40px 50px;
- 
+  background: transparent;
 }
-.container hr{
+
+.quizblock {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  transition: 600ms ease;
+  animation: backmove 40s linear infinite;
+
+}
+
+
+.container hr {
   height: 2px;
   border: none;
   background-color: black;
 
 }
-.container h1{
-  font-size: 5rem ;
+
+.container h1 {
+  font-size: 5rem;
   font-weight: 800;
- 
-}
-.container h2{
-  font-size: 27px;
-  font-weight: 500;
+  color: rgb(17, 15, 15, 85%);
 
 }
-.container ul li{
+
+.container h2 {
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
+  height: 50px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #000085;
+
+}
+
+.container ul li {
   display: flex;
   align-items: center;
   padding-left: 22px;
   height: 50px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #1e1e1e;
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -47,7 +98,7 @@
 
 
 .btn {
- 
+
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -65,15 +116,22 @@
   margin-top: 20px;
   font-style: italic;
 }
-.correct{
+
+.correct {
   background: rgb(53, 182, 30);
   border-color: rgb(0, 174, 29);
-} 
-.wrong{
+}
+
+.wrong {
   background-color: rgb(175, 82, 82);
   border-color: red;
 }
-.selcted{
+
+.selcted {
   background-color: rosybrown;
-  
+
+}
+
+.q {
+  margin-right: 220px;
 }
